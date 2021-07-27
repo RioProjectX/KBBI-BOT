@@ -24,7 +24,7 @@ $ cp .env.example .env
 Fill in everything required in the ENV
 
 ```
-$ node main
+$ node index
 ```
 Congrats your bot is now active.
 
