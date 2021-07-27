@@ -20,4 +20,7 @@ bot.command('kata', (ctx) => {
    })
 })
 
+console.log('Bot Mu sudah berjalan dengan baik')
+console.log('Jangan lupa subs @nekozu ya!'
+
 bot.start();
