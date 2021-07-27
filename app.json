@@ -1,0 +1,25 @@
+ {
+"name": "KBBI-Bot",
+  "description": "Mencari kata di kbbi menggunakan telegram bot",
+  "keywords": [
+    "telegram",
+    "bot"
+  ],
+  "repository": "https://github.com/nekozu/KBBI-BOT",
+  "env": {
+    "start_text": {
+      "description": "Untuk command start.",
+      "required": true
+    },
+    "token": {
+      "description": "Bot token kamu",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "stack": "heroku-20"
+}
