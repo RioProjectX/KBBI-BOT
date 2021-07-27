@@ -25,7 +25,6 @@ Fill in everything required in the ENV
 
 ```
 $ node main
-
 ```
 Congrats your bot is now active.
 
