@@ -10,7 +10,7 @@ bot.command('kata', (ctx) => {
     let inputArray = input.split(" ");
     inputArray.shift();
     const query = inputArray.join(" "); 
-    const keyboard = new InlineKeyboard().url('Cari diweb kbbi', 'https://kbbi.kemdikbud.go.id/entri/'+query)                                                                                                                                                                
+    const keyboard = new InlineKeyboard().url('Lihat diweb kbbi', 'https://kbbi.kemdikbud.go.id/entri/'+query)                                                                                                                                                                
     kbbi(query).then(res => {
      ctx.reply(res.data.arti, {
         reply_markup: keyboard
