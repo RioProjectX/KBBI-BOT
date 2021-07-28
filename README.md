@@ -8,6 +8,9 @@ And also you can clone this bot and replace it as you like. Don't forget to incl
 # Heroku
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Nekozu/KBBI-BOT.git)
 
+# Railway
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2Fnekozu%2FKBBI-BOT&envs=start_text%2Ctoken&start_textDesc=Pm+Start+Text.+Untuk+command+%2Fstart&tokenDesc=Bot+token+from+bot+father&start_textDefault=Halo+saya+bot+kbbi&tokenDefault=12345)
+
 # Local
 ```
 $ git clone https://github.com/nekozu/kbbi-bot
