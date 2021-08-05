@@ -19,6 +19,30 @@ bot.command('kata', (ctx) => {
          ctx.reply(e);
    })
 })
+bot.on('inline_query', (ctx) => {
+    let all_data = ctx.inlineQuery
+    let query = ctx.inlineQuery.query
+    let k = kbbi(query)
+        result = [
+            {
+                type: "article",
+                id: 1,
+                title: "KBBI",
+                description: "Ditemukan",
+                input_message_content: {
+                    message_text: k.data.arti,
+                    parse_mode: "HTML"
+                }
+            }
+        ]
+
+        ctx.answerInlineQuery(result);
+    }
+
+
+}).catch((err, ctx) => {
+    console.log('Ooops, encountered an error')
+})
 
 console.log('Bot Mu sudah berjalan dengan baik')
 console.log('Jangan lupa subs @nekozu ya!')
