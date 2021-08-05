@@ -32,17 +32,11 @@ bot.on('inline_query', (ctx) => {
                 input_message_content: {
                     message_text: k.data.arti,
                     parse_mode: "HTML"
-                }
             }
         ]
 
         ctx.answerInlineQuery(result);
     )}
-
-
-}).catch((err, ctx) => {
-    console.log('Ooops, encountered an error')
-})
 
 console.log('Bot Mu sudah berjalan dengan baik')
 console.log('Jangan lupa subs @nekozu ya!')
