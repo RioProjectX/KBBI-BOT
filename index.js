@@ -32,11 +32,13 @@ bot.on('inline_query', (ctx) => {
                 input_message_content: {
                     message_text: k.data.arti,
                     parse_mode: "HTML"
-            }
-        ]
-
-        ctx.answerInlineQuery(result);
-    )}
+            },
+      reply_markup: Markup.inlineKeyboard([
+        Markup.button.url('Lihat Di Web', 'https://kbbi.kemdikbud.go.id/entri/'+query)
+      ])
+    }))
+  return await ctx.answerInlineQuery(recipes)
+})
 
 console.log('Bot Mu sudah berjalan dengan baik')
 console.log('Jangan lupa subs @nekozu ya!')
