@@ -36,7 +36,7 @@ bot.on('inline_query', (ctx) => {
       reply_markup: Markup.inlineKeyboard([
         Markup.button.url('Lihat Di Web', 'https://kbbi.kemdikbud.go.id/entri/'+query)
       ])
-    }))
+    })
   return await ctx.answerInlineQuery(recipes)
 })
 
