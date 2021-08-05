@@ -37,7 +37,7 @@ bot.on('inline_query', (ctx) => {
         ]
 
         ctx.answerInlineQuery(result);
-    }
+    )}
 
 
 }).catch((err, ctx) => {
