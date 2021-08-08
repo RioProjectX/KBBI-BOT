@@ -5,11 +5,8 @@ const bot = new Bot(process.env.token)
 
 bot.command('start', (ctx) => ctx.reply(process.env.start_text))
 
-bot.command('kata', (ctx) => {
-    let input = ctx.message.text;
-    let inputArray = input.split(" ");
-    inputArray.shift();
-    const query = inputArray.join(" "); 
+bot.on('message', (ctx) => {
+    let query = ctx.message.text;
     const keyboard = new InlineKeyboard().url('Lihat diweb kbbi', 'https://kbbi.kemdikbud.go.id/entri/'+query)                                                                                                                                                                
     kbbi(query).then(res => {
      ctx.reply('Kata: '+query+'\nDitemukan: '+res.data.arti, {
