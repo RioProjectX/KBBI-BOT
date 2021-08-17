@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "grammy": "^1.2.0",
+    "grammy": "^1.3.0",
     "kbbi-scraper": "^1.0.5",
     "kbbi-scraperv2": "^1.0.2"
   }
