@@ -3,7 +3,8 @@ const kbbi = require('kbbi-scraper');
 
 const bot = new Bot(process.env.token)
 
-bot.command('start', (ctx) => ctx.reply(process.env.start_text))
+n.command('start', (ctx) => {
+  ctx.reply('Hai '+ctx.from.first_name+' Saya Adalah KBBI Bot Bisa Mencari Kata Mudah Dan Cepat , Saya Di Buat Oleh @Riio00 ,Silahkan Ketik Kata Yang Mau Kamu Cari')
 
 bot.on('message', (ctx) => {
     let query = ctx.message.text;
