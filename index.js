@@ -18,6 +18,6 @@ bot.on('message', (ctx) => {
 })          
 
 console.log('Bot Mu sudah berjalan dengan baik')
-console.log('Jangan lupa subs @nekozu ya!')
+console.log('Jangan lupa subs @RioBotSupport ya!')
 
 bot.start();
